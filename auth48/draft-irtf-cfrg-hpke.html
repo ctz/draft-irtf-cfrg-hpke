@@ -3143,8 +3143,8 @@ described above.<a href="#section-9.7.1-1" class="pilcrow">¶</a></p>
 <p id="section-9.7.1-2">Ordering requirements of this character are usually fulfilled by providing a
 sequence number in the framing of encrypted messages.  Whatever information is
 used to determine the ordering of HPKE-encrypted messages <span class="bcp14">SHOULD</span> be included in
-the AAD passed to <code>ContextS.Seal()</code> and <code>ContextR.Open()</code>.  The specifics of
-this scheme are up to the application.<a href="#section-9.7.1-2" class="pilcrow">¶</a></p>
+the associated data passed to <code>ContextS.Seal()</code> and <code>ContextR.Open()</code>.  The
+specifics of this scheme are up to the application.<a href="#section-9.7.1-2" class="pilcrow">¶</a></p>
 <p id="section-9.7.1-3">HPKE is not tolerant of lost messages. Applications <span class="bcp14">MUST</span> be able to detect when
 a message has been lost.  When an unrecoverable loss is detected, the application <span class="bcp14">MUST</span> discard
 any associated HPKE context.<a href="#section-9.7.1-3" class="pilcrow">¶</a></p>
@@ -3595,9 +3595,9 @@ in the KeySchedule function in <a href="#encryption-context" class="xref">Sectio
 include the context values <code>key</code>, <code>base_nonce</code>, and <code>exporter_secret</code>.<a href="#appendix-B-2.2" class="pilcrow">¶</a>
 </li>
         <li id="appendix-B-2.3">Encryption test vectors: A fixed plaintext message is encrypted using
-different sequence numbers and AAD values using the context computed in (2).
+different sequence numbers and associated data values using the context computed in (2).
 Each test vector lists the sequence number and corresponding nonce computed
-with <code>base_nonce</code>, the plaintext message <code>pt</code>, AAD <code>aad</code>, and output
+with <code>base_nonce</code>, the plaintext message <code>pt</code>, associated data <code>aad</code>, and output
 ciphertext <code>ct</code>.<a href="#appendix-B-2.3" class="pilcrow">¶</a>
 </li>
       </ol>
