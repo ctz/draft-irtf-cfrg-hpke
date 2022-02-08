@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-02-08T01:38:30.265714+00:00",
+  "timestamp": "2022-02-08T16:01:47.686413+00:00",
   "repo": "cfrg/draft-irtf-cfrg-hpke",
   "labels": [
     {
@@ -18166,13 +18166,13 @@
       "labels": [],
       "body": "This PR is for AUTH48 processing.  At the end, we should have a Markdown file that represents the substance of what will go in RFC 9180.   The first commit imports the RFC editor's changes.  Subsequent commits will reflect the authors' changes on top of those changes.",
       "createdAt": "2022-01-10T22:14:40Z",
-      "updatedAt": "2022-02-08T01:38:01Z",
+      "updatedAt": "2022-02-08T16:01:23Z",
       "baseRepository": "cfrg/draft-irtf-cfrg-hpke",
       "baseRefName": "master",
       "baseRefOid": "d0fae32205c3140bf15759d80c83991bd7dd015d",
       "headRepository": "cfrg/draft-irtf-cfrg-hpke",
       "headRefName": "auth48",
-      "headRefOid": "866a35d8f9ba3d247e05230e7e88abb1e4c15865",
+      "headRefOid": "66d6a770352d6a2d3bca38fba0e44f8e0c07dcc7",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -18468,6 +18468,61 @@
           ]
         }
       ]
+    },
+    {
+      "number": 249,
+      "id": "PR_kwDOC3hbXs4yOLtB",
+      "title": "Use section references",
+      "url": "https://github.com/cfrg/draft-irtf-cfrg-hpke/pull/249",
+      "state": "OPEN",
+      "author": "cabo",
+      "authorAssociation": "FIRST_TIME_CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-02-08T09:19:20Z",
+      "updatedAt": "2022-02-08T13:39:36Z",
+      "baseRepository": "cfrg/draft-irtf-cfrg-hpke",
+      "baseRefName": "auth48",
+      "baseRefOid": "8d20f5a35b8c98aea57a55a885ab08a1d8d33a0e",
+      "headRepository": "cabo/draft-irtf-cfrg-hpke",
+      "headRefName": "section-ref",
+      "headRefOid": "f9844e59034e7ac68af589bb41108a7b601c1811",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "sftcd",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "\r\nFWIW, I don't think changes like these are worth\r\nfurther extending an already month-long AUTH-48.\r\n(It was Jan 7 when this draft moved to AUTH-48.)\r\n\r\nS.\r\n\r\nOn 08/02/2022 09:19, cabo wrote:\r\n> \r\n> You can view, comment on, or merge this pull request online at:\r\n> \r\n>    https://github.com/cfrg/draft-irtf-cfrg-hpke/pull/249\r\n> \r\n> -- Commit Summary --\r\n> \r\n>    * Use section references\r\n> \r\n> -- File Changes --\r\n> \r\n>      M draft-irtf-cfrg-hpke.md (12)\r\n> \r\n> -- Patch Links --\r\n> \r\n> https://github.com/cfrg/draft-irtf-cfrg-hpke/pull/249.patch\r\n> https://github.com/cfrg/draft-irtf-cfrg-hpke/pull/249.diff\r\n> \r\n",
+          "createdAt": "2022-02-08T11:21:34Z",
+          "updatedAt": "2022-02-08T11:21:34Z"
+        },
+        {
+          "author": "cabo",
+          "authorAssociation": "NONE",
+          "body": "Of course not.\r\nI was just trying to show how to get the markdown-generated XML closer to the XML manually edited by the RFC editor.\r\n",
+          "createdAt": "2022-02-08T11:56:39Z",
+          "updatedAt": "2022-02-08T11:56:39Z"
+        },
+        {
+          "author": "chris-wood",
+          "authorAssociation": "COLLABORATOR",
+          "body": "@cabo out of curiosity, if this is what the RFC editor's expect in the XML, then why isn't this style of reference the default?",
+          "createdAt": "2022-02-08T13:29:46Z",
+          "updatedAt": "2022-02-08T13:29:46Z"
+        },
+        {
+          "author": "cabo",
+          "authorAssociation": "NONE",
+          "body": "Well, kramdown-rfc does what you tell it to do.  v2 did not have section references, so the \"default\" (= meaning of a simple reference) is to reference the bibliography entry.  v3 added section references.  The XML for that is arcane, so Martin Thomson and I added markdown support for essentially typing what you want, and with luck, kramdown-rfc knows what XML needs to be generated for that.  But that is only done if you put the \"Section ... of\" etc. into the {{..}}, to maintain  backward compatibility with existing documents.\r\n\r\n(I don't know, and didn't check here, if the RFC editor actually transforms old style references into section references; I just saw that at least one existing reference generates incorrect output so I fixed all of them -- triggered by the word \"section\" in the mail exchange :-)",
+          "createdAt": "2022-02-08T13:39:36Z",
+          "updatedAt": "2022-02-08T13:39:36Z"
+        }
+      ],
+      "reviews": []
     }
   ]
 }
