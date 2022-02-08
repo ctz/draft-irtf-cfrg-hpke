@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-14T15:04:52.665494+00:00",
+  "timestamp": "2022-02-08T01:38:30.265714+00:00",
   "repo": "cfrg/draft-irtf-cfrg-hpke",
   "labels": [
     {
@@ -18166,13 +18166,13 @@
       "labels": [],
       "body": "This PR is for AUTH48 processing.  At the end, we should have a Markdown file that represents the substance of what will go in RFC 9180.   The first commit imports the RFC editor's changes.  Subsequent commits will reflect the authors' changes on top of those changes.",
       "createdAt": "2022-01-10T22:14:40Z",
-      "updatedAt": "2022-01-14T00:33:29Z",
+      "updatedAt": "2022-02-08T01:38:01Z",
       "baseRepository": "cfrg/draft-irtf-cfrg-hpke",
       "baseRefName": "master",
       "baseRefOid": "d0fae32205c3140bf15759d80c83991bd7dd015d",
       "headRepository": "cfrg/draft-irtf-cfrg-hpke",
       "headRefName": "auth48",
-      "headRefOid": "bd97b9981898bb0c7efd7ae9b03d3efa79ae039b",
+      "headRefOid": "866a35d8f9ba3d247e05230e7e88abb1e4c15865",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -18444,6 +18444,26 @@
               "body": "Possibly, but indentation like that is an xml2rfc oddity. @bifurcation?",
               "createdAt": "2022-01-14T00:33:03Z",
               "updatedAt": "2022-01-14T00:33:03Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOC3hbXs4zAWe8",
+          "commit": {
+            "abbreviatedOid": "bd97b99"
+          },
+          "author": "bifurcation",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-18T17:08:15Z",
+          "updatedAt": "2022-01-18T17:08:15Z",
+          "comments": [
+            {
+              "originalPosition": 111,
+              "body": "I think the indentation is just due to things being at different levels.  In the main list, the first level is KEM/KDF/AEAD, and the functions are at the second level; the indentation is only at the second level.  The private key functions are at the first level, so they are not indented.\r\n\r\nNonetheless, I agree that this is more readable as a bulleted list.  Which is nice because I didn't reflect the definition list in this set of edits.  So I think we can leave this as it is, and negotiate with the RFC editor about reverting it to bullets.",
+              "createdAt": "2022-01-18T17:08:15Z",
+              "updatedAt": "2022-01-18T17:08:15Z"
             }
           ]
         }
