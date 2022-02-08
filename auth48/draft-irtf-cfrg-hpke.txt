@@ -436,7 +436,7 @@ Internet-Draft                    HPKE                     February 2022
    used inside a KEM algorithm, suite_id MUST start with "KEM" and
    identify this KEM algorithm; if used in the remainder of HPKE, it
    MUST start with "HPKE" and identify the entire ciphersuite in use.
-   See sections Section 4.1 and Section 5.1 for details.
+   See Sections 4.1 and 5.1 for details.
 
 4.1.  DH-Based KEM (DHKEM)
 
