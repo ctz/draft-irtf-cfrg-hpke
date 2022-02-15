@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-02-08T16:01:47.686413+00:00",
+  "timestamp": "2022-02-15T19:38:36.305239+00:00",
   "repo": "cfrg/draft-irtf-cfrg-hpke",
   "labels": [
     {
@@ -18166,13 +18166,13 @@
       "labels": [],
       "body": "This PR is for AUTH48 processing.  At the end, we should have a Markdown file that represents the substance of what will go in RFC 9180.   The first commit imports the RFC editor's changes.  Subsequent commits will reflect the authors' changes on top of those changes.",
       "createdAt": "2022-01-10T22:14:40Z",
-      "updatedAt": "2022-02-08T16:01:23Z",
+      "updatedAt": "2022-02-15T19:37:55Z",
       "baseRepository": "cfrg/draft-irtf-cfrg-hpke",
       "baseRefName": "master",
       "baseRefOid": "d0fae32205c3140bf15759d80c83991bd7dd015d",
       "headRepository": "cfrg/draft-irtf-cfrg-hpke",
       "headRefName": "auth48",
-      "headRefOid": "66d6a770352d6a2d3bca38fba0e44f8e0c07dcc7",
+      "headRefOid": "d6ec5180357d5606aa19a30af9e930347f179cf7",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
