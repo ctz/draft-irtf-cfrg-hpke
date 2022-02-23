@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-02-19T16:45:08.526170+00:00",
+  "timestamp": "2022-02-23T23:07:30.078745+00:00",
   "repo": "cfrg/draft-irtf-cfrg-hpke",
   "labels": [
     {
@@ -18159,24 +18159,26 @@
       "id": "PR_kwDOC3hbXs4wwwk9",
       "title": "RFC Editor proposed edits in AUTH48",
       "url": "https://github.com/cfrg/draft-irtf-cfrg-hpke/pull/248",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "bifurcation",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "This PR is for AUTH48 processing.  At the end, we should have a Markdown file that represents the substance of what will go in RFC 9180.   The first commit imports the RFC editor's changes.  Subsequent commits will reflect the authors' changes on top of those changes.",
       "createdAt": "2022-01-10T22:14:40Z",
-      "updatedAt": "2022-02-19T16:44:43Z",
+      "updatedAt": "2022-02-23T23:06:54Z",
       "baseRepository": "cfrg/draft-irtf-cfrg-hpke",
       "baseRefName": "master",
       "baseRefOid": "d0fae32205c3140bf15759d80c83991bd7dd015d",
       "headRepository": "cfrg/draft-irtf-cfrg-hpke",
       "headRefName": "auth48",
       "headRefOid": "8976574957cdccc58755bdbda6d3f3c1ffeece21",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2022-02-23T23:06:54Z",
+      "mergedAt": "2022-02-23T23:06:54Z",
+      "mergedBy": "chris-wood",
+      "mergeCommit": {
+        "oid": "f58301403223380449ecbfc15c6aeb427aa4a1a4"
+      },
       "comments": [
         {
           "author": "bifurcation",
@@ -18191,6 +18193,13 @@
           "body": "@bifurcation pending resolution of @blipp's comments above, I think we can merge this and cut a new XML file for the RPC.",
           "createdAt": "2022-01-14T00:33:29Z",
           "updatedAt": "2022-01-14T00:33:29Z"
+        },
+        {
+          "author": "bifurcation",
+          "authorAssociation": "COLLABORATOR",
+          "body": "@chris-wood @blipp This looks good to me, and I verified against the RPC's latest XML.  I would propose we merge this once we're all signed off with the RPC.",
+          "createdAt": "2022-02-19T16:46:50Z",
+          "updatedAt": "2022-02-19T16:46:50Z"
         }
       ],
       "reviews": [
